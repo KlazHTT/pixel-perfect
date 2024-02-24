@@ -1,0 +1,168 @@
+/* -----------------------------------------------------------------------------
+-- // RESETS
+----------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span,
+header, nav, main, article, section, aside, footer,
+h1, h2, h3, h4, h5, h6,
+p. strong, em, b, i, u, a, ol, ul, li,
+blockquote, pre, code, hr,
+img, picture, audio, video,
+table, caption, tbody, tfoot, thead, tr, th, td,
+form, input {
+  margin: 0;
+  padding: 0;
+  font: inheirt;
+  font-weight: normal;
+  line-height: 1.15;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+}
+
+header, nav, main, article, section, aside, footer,
+blockquote, pre, hr,
+img, picture, audio, video,
+table,
+form {
+  display: block;
+}
+
+/* -----------------------------------------------------------------------------
+-- // VARIABLES
+----------------------------------------------------------------------------- */
+
+:root {
+  --spacing-unit: 16px;
+
+  --color-font-primary: #2c2c2c;
+  --color-font-secondary: #fff;
+
+  --color-background-primary: #272635;
+  --color-background-container: #e8e9f3;
+  --color-background-container-secondary: #e8e9f32c;
+  --color-border: #e8e9f3;
+
+  --color-accent: #f95959;
+  --color-link: #272635;
+  --color-link-border: #272635;
+  --color-link-hover: #272635;
+}
+
+/* -----------------------------------------------------------------------------
+-- // BASE
+----------------------------------------------------------------------------- */
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: var(--color-background-primary);
+}
+
+h1 {
+  margin-bottom: var(--spacing-unit);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: var(--spacing-unit);
+  list-style-type: disc;
+}
+li { margin-bottom: calc(var(--spacing-unit) / 4); }
+
+a {
+  padding-top: calc(var(--spacing-unit) / 8);
+  color: var(--color-link);
+  border-bottom: 1px solid var(--color-link-border);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-link-hover);
+  border-bottom: 1px solid var(--color-accent);
+  transition: .4s;
+}
+
+/* -----------------------------------------------------------------------------
+-- // LAYOUT
+----------------------------------------------------------------------------- */
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 360px;
+}
+
+.browser-size {
+  padding: calc(var(--spacing-unit) * 4);
+  font-size: 6em;
+  color: var(--color-font-secondary);
+  text-align: center;
+  background-color: var(--color-background-container-secondary);
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.content {
+  padding-top: var(--spacing-unit);
+  padding-right: var(--spacing-unit);
+  padding-bottom: calc(var(--spacing-unit) / 2);
+  padding-left: var(--spacing-unit);
+  color: var(--color-font-primary);
+  background: var(--color-background-container);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+/* -----------------------------------------------------------------------------
+-- // DIVIDER X
+----------------------------------------------------------------------------- */
+
+.divider-x {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.divider-x:before {
+  position: absolute;
+  left: 28px;
+  height: 60px;
+  content: '';
+  border-left: 8px solid var(--color-accent);
+  transform: rotate(-45deg);
+}
+
+.divider-x:after {
+  position: absolute;
+  left: 28px;
+  height: 60px;
+  content: '';
+  border-left: 8px solid var(--color-accent);
+  transform: rotate(45deg);
+}
+
+/* -----------------------------------------------------------------------------
+-- // PARTICLES
+----------------------------------------------------------------------------- */
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
