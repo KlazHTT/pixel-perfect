@@ -5,7 +5,7 @@
 
 ## Screenshot
 
-![Pixel Perfect in action.](https://forge.haothitran.com/KlazHTT/pixel-perfect/raw/branch/main/assets/screenshot.png)
+![Pixel Perfect in action.](https://forge.haothitran.com/KlazHTT/pixel-perfect/raw/branch/main/assets/screenshot_final.png)
 
 ## Acknowledgements
 
